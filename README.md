@@ -1,4 +1,4 @@
-# project startup cli
+# jeff zhong's project startup cli
 ### Based on the following
 * chalk
 * commander
