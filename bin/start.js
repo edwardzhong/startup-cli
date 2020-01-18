@@ -7,9 +7,13 @@ const inquirer = require("inquirer");//命令行交互
 const { resolve } = require("path");
 
 const proj = {
-	full: {
-		name: "Full stack",
-		rep: "edwardzhong/fullstack-template"
+	back: {
+		name: "Backend",
+		rep: "edwardzhong/koa-server"
+	},
+	multi: {
+		name: "MultiPage",
+		rep: "edwardzhong/pages-front"
 	},
 	page: {
 		name: "Html page",
@@ -42,8 +46,12 @@ const promptList = [
 		name: "type",
 		choices: [
 			{
-				name: "Full stack",
-				value: "full"
+				name: "Backend",
+				value: "back"
+			},
+			{
+				name: "MultiPage",
+				value: "multi"
 			},
 			{
 				name: "Html page",
@@ -68,14 +76,16 @@ const promptList = [
 //全局命令 project -f abc
 program
 	.version("0.1.0")
-	.option("-f, full <name>", "Full stack")
+	.option("-b, back <name>", "Backend")
+	.option("-m, multi <name>", "MultiPage")
 	.option("-p, page <name>", "Html page")
 	.option("-r, react <name>", "React")
 	.option("-v, vue <name>", "Vue")
 	.option("-s, server <name>", "Static server")
 	.parse(process.argv);
 
-if (program.full) downloadFn(proj.full, program.full);
+if (program.back) downloadFn(proj.back, program.back);
+if (program.multi) downloadFn(proj.multi, program.multi);
 if (program.page) downloadFn(proj.page, program.page);
 if (program.react) downloadFn(proj.react, program.react);
 if (program.vue) downloadFn(proj.vue, program.vue);
