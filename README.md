@@ -13,8 +13,9 @@ npm link
 
 ### start
 ```
-project -f <name>  # full stack
-project -p <name>  # html page
+project -b <name>  # Backend
+project -m <name>  # MultiPage
+project -p <name>  # Html page
 project -r <name>  # react
 project -v <name>  # vue
 project -s <name>  # static server
