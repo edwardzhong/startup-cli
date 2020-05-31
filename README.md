@@ -14,8 +14,8 @@ npm link
 ### start
 ```
 project -b <name>  # Backend
-project -m <name>  # MultiPage
-project -p <name>  # Html page
+project -m <name>  # webpack MultiPage
+project -p <name>  # static page
 project -r <name>  # react
 project -v <name>  # vue
 project -w <name>  # webapp

@@ -98,6 +98,7 @@ if (program.multi) downloadFn(proj.multi, program.multi);
 if (program.page) downloadFn(proj.page, program.page);
 if (program.react) downloadFn(proj.react, program.react);
 if (program.vue) downloadFn(proj.vue, program.vue);
+if (program.webapp) downloadFn(proj.webapp, program.webapp);
 if (program.server) downloadFn(proj.server, program.server);
 
 //process.argv 参数信息
