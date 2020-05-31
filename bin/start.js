@@ -13,19 +13,23 @@ const proj = {
 	},
 	multi: {
 		name: "MultiPage",
-		rep: "edwardzhong/pages-front"
+		rep: "edwardzhong/webpack-pages"
 	},
 	page: {
 		name: "Html page",
-		rep: "edwardzhong/static-page-project"
+		rep: "edwardzhong/static-page"
 	},
 	react: {
 		name: "React",
-		rep: "edwardzhong/hello_react"
+		rep: "edwardzhong/hello-react"
 	},
 	vue: {
 		name: "Vue",
-		rep: "edwardzhong/hello_vue"
+		rep: "edwardzhong/hello-vue"
+	},
+	webapp: {
+		name: "WebApp",
+		rep: "edwardzhong/webapp"
 	},
 	server: {
 		name: "Static server",
@@ -66,6 +70,10 @@ const promptList = [
 				value: "vue"
 			},
 			{
+				name: "WebApp",
+				value: "WebApp"
+			},
+			{
 				name: "Static server",
 				value: "server"
 			}
@@ -81,6 +89,7 @@ program
 	.option("-p, page <name>", "Html page")
 	.option("-r, react <name>", "React")
 	.option("-v, vue <name>", "Vue")
+	.option("-w, webapp <name>", "WebApp")
 	.option("-s, server <name>", "Static server")
 	.parse(process.argv);
 

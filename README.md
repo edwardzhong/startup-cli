@@ -18,5 +18,6 @@ project -m <name>  # MultiPage
 project -p <name>  # Html page
 project -r <name>  # react
 project -v <name>  # vue
+project -w <name>  # webapp
 project -s <name>  # static server
 ```
