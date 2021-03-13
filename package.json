@@ -1,5 +1,5 @@
 {
-  "name": "staticup-cli",
+  "name": "startup-cli",
   "version": "0.1.0",
   "description": "load project template",
   "bin": {
