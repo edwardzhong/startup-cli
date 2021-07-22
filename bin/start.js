@@ -21,7 +21,8 @@ const proj = {
 	},
 	react: {
 		name: "React",
-		rep: "edwardzhong/hello-react"
+		// rep: "edwardzhong/hello-react"
+		rep: "edwardzhong/react-startup"
 	},
 	vue: {
 		name: "Vue",
